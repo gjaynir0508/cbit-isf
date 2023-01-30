@@ -1,0 +1,241 @@
+[
+	{
+		"id": "1",
+		"title": "Guest Lecture",
+		"date": "2018-03-01",
+		"description": "Guest Lecture on \"The Role of Technology in the 21st Century\" at the Department of ECE, CBIT Hyderabad",
+		"tags": [
+			{
+				"label": "Tag 1",
+				"emoji": "👍"
+			},
+			{
+				"label": "Tag 2",
+				"emoji": "🧑‍💻"
+			},
+			{
+				"label": "Tag 3",
+				"emoji": "🎉"
+			},
+			{
+				"label": "Tag 4",
+				"emoji": "⚒️"
+			}
+		],
+		"images": [
+			"/assets/images/events_page/events/Guest Lecture - Hafeez Ali 2nd Nov 2022/1.jpg",
+			"/assets/images/events_page/events/Guest Lecture - Hafeez Ali 2nd Nov 2022/2.jpg"
+		],
+		"writeup": "Guest Lecture on \"The Role of Technology in the 21st Century\" at the Department of ECE at CBIT Hyderabad on 1st March 2018. The lecture was delivered by Mr. Hafeez Ali, Founder and CEO of Hafeez Ali & Associates, a leading consulting firm in the field of Information Technology. The lecture was attended by students of ECE, CSE, IT and EEE. The lecture was followed by a Q&A session."
+	},
+	{
+		"id": "2",
+		"title": "IoT Internship Program",
+		"date": "2019-06-01",
+		"description": "IoT Internship Program at CBIT Hyderabad for 3rd year ECE students in collaboration with IOT India Foundation and IOT India Magazine in June 2019.",
+		"tags": [
+			{
+				"label": "Tag 1",
+				"emoji": "👍"
+			},
+			{
+				"label": "Tag 2",
+				"emoji": "🧑‍💻"
+			},
+			{
+				"label": "Tag 3",
+				"emoji": "🎉"
+			},
+			{
+				"label": "Tag 4",
+				"emoji": "⚒️"
+			}
+		],
+		"images": [
+			"/assets/images/events_page/events/IoT Internship IETE Hyd. OU/1.jpg",
+			"/assets/images/events_page/events/IoT Internship IETE Hyd. OU/2.jpg"
+		],
+		"writeup": "IoT Internship Program at CBIT Hyderabad for 3rd year ECE students in collaboration with IOT India Foundation and IOT India Magazine in June 2019. The program was inaugurated by Dr. K. Srinivasa Rao, Director, CBIT Hyderabad. The program was attended by 30 students from 3rd year ECE. The program was followed by a Q&A session."
+	},
+	{
+		"id": "3",
+		"title": "Shruthi 2022 Parade",
+		"date": "2022-04-01",
+		"description": "Shruthi 2022 Parade at CBIT Hyderabad on 1st April 2022. Shruthi is the Art Festival of CBIT Hyderabad.",
+		"tags": [
+			{
+				"label": "Tag 1",
+				"emoji": "👍"
+			},
+			{
+				"label": "Tag 2",
+				"emoji": "🧑‍💻"
+			},
+			{
+				"label": "Tag 3",
+				"emoji": "🎉"
+			},
+			{
+				"label": "Tag 4",
+				"emoji": "⚒️"
+			}
+		],
+		"images": [
+			"/assets/images/events_page/events/Shruthi 2022 Parade/1.jpeg"
+		],
+		"writeup": "Shruthi 2022 Parade at CBIT Hyderabad on 1st April 2022. Shruthi is the Art Festival of CBIT Hyderabad. The students of CBIT ISF participated in the parade with a float on the theme \"The Future of Technology\". The float was designed and built by the students of CBIT ISF."
+	},
+	{
+		"id": "4",
+		"title": "Technical Quiz",
+		"date": "2022-06-1",
+		"description": "Technical Quiz at CBIT Hyderabad on 1st June 2022. The quiz was attended by students of CBIT Hyderabad.",
+		"tags": [
+			{
+				"label": "Tag 1",
+				"emoji": "👍"
+			},
+			{
+				"label": "Tag 2",
+				"emoji": "🧑‍💻"
+			},
+			{
+				"label": "Tag 3",
+				"emoji": "🎉"
+			},
+			{
+				"label": "Tag 4",
+				"emoji": "⚒️"
+			}
+		],
+		"images": [
+			"/assets/images/events_page/events/Technical Quiz/1.jpeg",
+			"/assets/images/events_page/events/Technical Quiz/2.jpeg",
+			"/assets/images/events_page/events/Technical Quiz/3.jpeg",
+			"/assets/images/events_page/events/Technical Quiz/4.jpeg",
+			"/assets/images/events_page/events/Technical Quiz/5.jpeg",
+			"/assets/images/events_page/events/Technical Quiz/6.jpeg"
+		],
+		"writeup": "Technical Quiz at CBIT Hyderabad on 1st June 2022. The quiz was attended by students of CBIT Hyderabad. The quiz was followed by a Q&A session. The quiz was conducted by the students of CBIT ISF."
+	},
+	{
+		"id": "5",
+		"title": "Guest Lecture",
+		"date": "2018-03-01",
+		"description": "Guest Lecture on \"The Role of Technology in the 21st Century\" at the Department of ECE, CBIT Hyderabad",
+		"tags": [
+			{
+				"label": "Tag 1",
+				"emoji": "👍"
+			},
+			{
+				"label": "Tag 2",
+				"emoji": "🧑‍💻"
+			},
+			{
+				"label": "Tag 3",
+				"emoji": "🎉"
+			},
+			{
+				"label": "Tag 4",
+				"emoji": "⚒️"
+			}
+		],
+		"images": [
+			"/assets/images/events_page/events/Guest Lecture - Hafeez Ali 2nd Nov 2022/1.jpg",
+			"/assets/images/events_page/events/Guest Lecture - Hafeez Ali 2nd Nov 2022/2.jpg"
+		],
+		"writeup": "Guest Lecture on \"The Role of Technology in the 21st Century\" at the Department of ECE at CBIT Hyderabad on 1st March 2018. The lecture was delivered by Mr. Hafeez Ali, Founder and CEO of Hafeez Ali & Associates, a leading consulting firm in the field of Information Technology. The lecture was attended by students of ECE, CSE, IT and EEE. The lecture was followed by a Q&A session."
+	},
+
+	{
+		"id": "6",
+		"title": "IoT Internship Program",
+		"date": "2019-06-01",
+		"description": "IoT Internship Program at CBIT Hyderabad for 3rd year ECE students in collaboration with IOT India Foundation and IOT India Magazine in June 2019.",
+		"tags": [
+			{
+				"label": "Tag 1",
+				"emoji": "👍"
+			},
+			{
+				"label": "Tag 2",
+				"emoji": "🧑‍💻"
+			},
+			{
+				"label": "Tag 3",
+				"emoji": "🎉"
+			},
+			{
+				"label": "Tag 4",
+				"emoji": "⚒️"
+			}
+		],
+		"images": [
+			"/assets/images/events_page/events/IoT Internship IETE Hyd. OU/1.jpg",
+			"/assets/images/events_page/events/IoT Internship IETE Hyd. OU/2.jpg"
+		],
+		"writeup": "IoT Internship Program at CBIT Hyderabad for 3rd year ECE students in collaboration with IOT India Foundation and IOT India Magazine in June 2019. The program was inaugurated by Dr. K. Srinivasa Rao, Director, CBIT Hyderabad. The program was attended by 30 students from 3rd year ECE. The program was followed by a Q&A session."
+	},
+	{
+		"id": "7",
+		"title": "Shruthi 2022 Parade",
+		"date": "2022-04-01",
+		"description": "Shruthi 2022 Parade at CBIT Hyderabad on 1st April 2022. Shruthi is the Art Festival of CBIT Hyderabad.",
+		"tags": [
+			{
+				"label": "Tag 1",
+				"emoji": "👍"
+			},
+			{
+				"label": "Tag 2",
+				"emoji": "🧑‍💻"
+			},
+			{
+				"label": "Tag 3",
+				"emoji": "🎉"
+			},
+			{
+				"label": "Tag 4",
+				"emoji": "⚒️"
+			}
+		],
+		"images": [
+			"/assets/images/events_page/events/Shruthi 2022 Parade/1.jpeg"
+		],
+		"writeup": "Shruthi 2022 Parade at CBIT Hyderabad on 1st April 2022. Shruthi is the Art Festival of CBIT Hyderabad. The students of CBIT ISF participated in the parade with a float on the theme \"The Future of Technology\". The float was designed and built by the students of CBIT ISF."
+	},
+	{
+		"id": "8",
+		"title": "Technical Quiz",
+		"date": "2022-06-1",
+		"description": "Technical Quiz at CBIT Hyderabad on 1st June 2022. The quiz was attended by students of CBIT Hyderabad.",
+		"tags": [
+			{
+				"label": "Tag 1",
+				"emoji": "👍"
+			},
+			{
+				"label": "Tag 2",
+				"emoji": "🧑‍💻"
+			},
+			{
+				"label": "Tag 3",
+				"emoji": "🎉"
+			},
+			{
+				"label": "Tag 4",
+				"emoji": "⚒️"
+			}
+		],
+		"images": [
+			"/assets/images/events_page/events/Technical Quiz/1.jpeg",
+			"/assets/images/events_page/events/Technical Quiz/2.jpeg",
+			"/assets/images/events_page/events/Technical Quiz/3.jpeg",
+			"/assets/images/events_page/events/Technical Quiz/4.jpeg",
+			"/assets/images/events_page/events/Technical Quiz/5.jpeg",
+			"/assets/images/events_page/events/Technical Quiz/6.jpeg"
+		],
+		"writeup": "Technical Quiz at CBIT Hyderabad on 1st June 2022. The quiz was attended by students of CBIT Hyderabad. The quiz was followed by a Q&A session. The quiz was conducted by the students of CBIT ISF."
+	}
+]

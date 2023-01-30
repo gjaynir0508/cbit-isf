@@ -1,0 +1,94 @@
+.button-glow {
+	--glow-length: 20px; /* 50px or less */
+	--glow-inner-color: #1267d0;
+	--glow-inner-thickness: 2px;
+	--glow-outer-color: #0477ff;
+	--glow-outer-size: 8px;
+	--glow-offset: 0px;
+	--animation-speed: 1200ms;
+	--border-radius: 4px;
+	--svg-offset: 100px; /* no need to change, used for calculations */
+
+	cursor: pointer;
+	font-size: 1rem;
+	font-family: inherit;
+	text-decoration: none;
+	font-weight: 700;
+	color: white;
+	background-color: #0477ff;
+	padding: 0.75em 1.25em;
+	border: 0;
+	border-radius: var(--border-radius);
+
+	position: relative;
+}
+
+.button-glow svg {
+	position: absolute;
+	inset: calc(var(--svg-offset) / -2);
+	width: calc(100% + var(--svg-offset) + var(--glow-offset));
+	height: calc(100% + var(--svg-offset) + var(--glow-offset));
+	opacity: 0;
+	pointer-events: none;
+}
+
+.glow,
+.border {
+	width: calc(100% - var(--svg-offset) + var(--glow-offset));
+	height: calc(100% - var(--svg-offset) + var(--glow-offset));
+
+	x: calc(var(--svg-offset) / 2 - (var(--glow-offset) / 2));
+	y: calc(var(--svg-offset) / 2 - (var(--glow-offset) / 2));
+	fill: transparent;
+
+	// rx: calc(var(--border-radius) * 1.5);
+	rx: var(--border-radius);
+	//add up to 50
+	stroke-dasharray: var(--glow-length) calc(50px - var(--glow-length));
+	stroke-dashoffset: 0;
+}
+
+.border {
+	stroke-width: var(--glow-inner-thickness);
+	stroke: var(--glow-inner-color);
+}
+
+.glow {
+	stroke-width: var(--glow-outer-size);
+	stroke: var(--glow-outer-color);
+	filter: blur(var(--glow-outer-size));
+}
+
+.button-glow:is(:hover, :focus) svg {
+	animation: glow-visibility var(--animation-speed) ease-in-out forwards;
+}
+
+.button-glow:is(:hover, :focus) :is(.glow, .border) {
+	animation: glow-movement var(--animation-speed) ease-in forwards;
+}
+
+@keyframes glow-visibility {
+	0%,
+	100% {
+		opacity: 0;
+	}
+
+	25%,
+	40% {
+		opacity: 1;
+	}
+}
+
+@keyframes glow-movement {
+	0% {
+		stroke-dashoffset: 0px;
+	}
+
+	100% {
+		stroke-dashoffset: -120px;
+	}
+}
+
+.button-glow[data-style="offset"] :is(.border, .glow) {
+	--glow-offset: 10px;
+}
