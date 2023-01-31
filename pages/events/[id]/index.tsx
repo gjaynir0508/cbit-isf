@@ -82,6 +82,9 @@ const useStyles = createStyles((theme, _params, getRef) => ({
 			color:
 				theme.colorScheme === "dark" ? theme.colors.dark[0] : "white",
 		},
+		"@media (max-width: 800px)": {
+			width: "100%",
+		},
 	},
 	aside: {
 		display: "flex",
