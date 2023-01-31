@@ -40,12 +40,6 @@ const useStyles = createStyles((theme, _params, getRef) => ({
 		fontSize: theme.fontSizes.xs,
 		fontWeight: 700,
 	},
-	flex1: {
-		flexGrow: 1,
-		"& button": {
-			width: "100%",
-		},
-	},
 	carousel: {
 		"&:hover": {
 			[`& .${getRef("carouselControls")}`]: {
@@ -163,7 +157,7 @@ export function CardWithCarousel({
 				mt="md"
 				style={{ display: "flex", justifyContent: "space-between" }}
 			>
-				<Link href={`/events/${id}`} className={classes.flex1}>
+				<Link href={`/events/${id}`} className="flex1">
 					<Button radius="md">Show details</Button>
 				</Link>
 				<ActionIcon

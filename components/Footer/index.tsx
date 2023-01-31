@@ -29,6 +29,13 @@ const useStyles = createStyles((theme) => ({
 			padding: "3rem 1.5rem",
 			gap: "32px",
 		},
+		"@media (max-width: 480px)": {
+			padding: "3rem 1rem",
+			"& img": {
+				maxHeight: "72px",
+				width: "auto",
+			},
+		},
 	},
 	linkssection: {
 		"& a": {
@@ -48,10 +55,6 @@ const useStyles = createStyles((theme) => ({
 		overflow: "hidden",
 		"@media (max-width: 768px)": {
 			justifyContent: "space-between",
-			"& img:nth-of-type(2)": {
-				maxWidth: "150px",
-				height: "auto",
-			},
 		},
 	},
 	membership: {
@@ -122,6 +125,7 @@ const useStyles = createStyles((theme) => ({
 				},
 			},
 		},
+		whiteSpace: "nowrap",
 	},
 	social: {
 		display: "flex",
@@ -186,10 +190,10 @@ export default function Footer() {
 						</Link>
 						<Link href="https://www.cbit.ac.in" target="_blank">
 							<Image
-								src="/assets/images/cbit43sq.png"
+								src="/assets/images/cbit44.png"
 								alt="CBIT Hyderabad Logo"
-								width="300"
-								height="300"
+								width={(1024 / 233) * 72}
+								height="72"
 							/>
 						</Link>
 					</div>

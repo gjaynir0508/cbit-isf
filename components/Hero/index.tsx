@@ -17,6 +17,7 @@ const useStyles = createStyles((theme) => ({
 			flexDirection: "column",
 			alignItems: "center",
 			justifyContent: "flex-end",
+			backgroundColor: "#000B",
 		},
 		minHeight: "80vh",
 		fontFamily: "Inter, Roboto, sans-serif",

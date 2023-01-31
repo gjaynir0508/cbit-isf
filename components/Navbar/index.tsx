@@ -46,13 +46,16 @@ const useStyles = createStyles((theme) => ({
 			justifySelf: "center",
 		},
 	},
+	logoMobile: {
+		display: "none",
+		"@media (max-width: 768px)": {
+			display: "block",
+		},
+	},
 	links: {
 		gap: "24px",
 		"& a:hover span": {
 			color: theme.colors.blue[6],
-		},
-		"& > img": {
-			display: "none",
 		},
 		"@media (max-width: 768px)": {
 			display: "flex",
@@ -69,9 +72,6 @@ const useStyles = createStyles((theme) => ({
 					: theme.colors.gray[1],
 			"&.active": {
 				left: 0,
-			},
-			"& > img": {
-				display: "block",
 			},
 			zIndex: 1000,
 			padding: "64px 32px",
@@ -195,17 +195,26 @@ export default function Navbar() {
 					navOpen ? "active" : ""
 				)}
 			>
-				<Image
-					src={
-						theme.colorScheme === "dark"
-							? "/logo_grad3.png"
-							: "/logo_grad1.png"
-					}
-					alt="IETE Logo"
-					width="100"
-					height="100"
-					quality={100}
-				/>
+				<Link
+					href="/"
+					onClick={() => {
+						setNavOpen(false);
+						setLockScroll(false);
+					}}
+					className={classes.logoMobile}
+				>
+					<Image
+						src={
+							theme.colorScheme === "dark"
+								? "/logo_grad3.png"
+								: "/logo_grad1.png"
+						}
+						alt="IETE Logo"
+						width="100"
+						height="100"
+						quality={100}
+					/>
+				</Link>
 				<Link
 					href="/"
 					onClick={() => {

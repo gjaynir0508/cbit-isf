@@ -19,3 +19,11 @@ body {
 ::-webkit-scrollbar-thumb {
 	background-color: #228be6;
 }
+
+a.flex1 {
+	flex-grow: 1 !important;
+}
+
+a.flex1 button {
+	width: 100%;
+}

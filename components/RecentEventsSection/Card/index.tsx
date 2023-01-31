@@ -40,12 +40,6 @@ const useStyles = createStyles((theme) => ({
 		fontSize: theme.fontSizes.xs,
 		fontWeight: 700,
 	},
-	flex1: {
-		flexGrow: 1,
-		"& button": {
-			width: "100%",
-		},
-	},
 }));
 
 interface BadgeCardProps {
@@ -118,7 +112,7 @@ export function BadgeCard({
 			</Card.Section>
 
 			<Group mt="md">
-				<Link href={`/events/${id}`} className={classes.flex1}>
+				<Link href={`/events/${id}`} className="flex1">
 					<Button radius="md">Show details</Button>
 				</Link>
 				<ActionIcon

@@ -10,6 +10,7 @@ import {
 import AllMetaTags, { AllMetaTagsProps } from "@components/AllMetaTags";
 import MainLayout from "@layouts/MainLayout";
 import { useLocalStorage, useHotkeys } from "@mantine/hooks";
+import { useEffect } from "react";
 
 interface CustomAppProps extends AppProps {
 	Component: AppProps["Component"] & {
@@ -26,6 +27,15 @@ export default function App(props: CustomAppProps) {
 		defaultValue: "light",
 		getInitialValueInEffect: true,
 	});
+	useEffect(() => {
+		const matchUserTheme = window?.matchMedia(
+			"(prefers-color-scheme: dark)"
+		);
+		setColorScheme(matchUserTheme.matches ? "dark" : "light");
+		matchUserTheme.addEventListener("change", (e) => {
+			setColorScheme(e.matches ? "dark" : "light");
+		});
+	}, [setColorScheme]);
 
 	const toggleColorScheme = (value?: ColorScheme) =>
 		setColorScheme(value || (colorScheme === "dark" ? "light" : "dark"));
