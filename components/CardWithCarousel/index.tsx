@@ -9,7 +9,7 @@ import {
 	Notification,
 	createStyles,
 } from "@mantine/core";
-import { FaShare, FaCheck } from "react-icons/fa";
+import { FaShare, FaCheck, FaCross } from "react-icons/fa";
 import { useState } from "react";
 import Link from "next/link";
 import { Carousel } from "@mantine/carousel";
@@ -170,7 +170,7 @@ export function CardWithCarousel({
 							await navigator.share({
 								title,
 								text: description,
-								url: `https://isf-cbit.verce.app/events/${id}`,
+								url: `https://isf-cbit.vercel.app/events/${id}`,
 							});
 						} catch {
 							setErr(true);
@@ -180,7 +180,12 @@ export function CardWithCarousel({
 					<FaShare />
 				</ActionIcon>
 				{err && (
-					<Notification icon={<FaCheck />} title="We notify you that">
+					<Notification
+						color={theme.colors.red[4]}
+						icon={<FaCross />}
+						title="We notify you that"
+						onClose={() => setErr(false)}
+					>
 						Sorry! We couldn&apos;t share this event
 					</Notification>
 				)}
