@@ -170,7 +170,7 @@ export function CardWithCarousel({
 							await navigator.share({
 								title,
 								text: description,
-								url: "https://scipilogy.vercel.app",
+								url: `https://isf-cbit.verce.app/events/${id}`,
 							});
 						} catch {
 							setErr(true);
