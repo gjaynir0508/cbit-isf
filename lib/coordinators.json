@@ -1,0 +1,47 @@
+[
+	{
+		"name": "T. Sridhar",
+		"teacherOrStudent": "teacher",
+		"job": "Asst. Professor, ECE"
+	},
+	{
+		"name": "P. Ranjith",
+		"teacherOrStudent": "teacher",
+		"job": "Asst. Professor, ECE"
+	},
+	{
+		"name": "B. Snehitha",
+		"teacherOrStudent": "student",
+		"job": "President"
+	},
+	{
+		"name": "A. Nikhil",
+		"teacherOrStudent": "student",
+		"job": "vice President"
+	},
+	{
+		"name": "K. Sujith",
+		"teacherOrStudent": "student",
+		"job": "General Secretary"
+	},
+	{
+		"name": "D. Poojitha",
+		"teacherOrStudent": "student",
+		"job": "Treasurer"
+	},
+	{
+		"name": "K. Varun",
+		"teacherOrStudent": "student",
+		"job": "Technical Head"
+	},
+	{
+		"name": "T. Anoushka",
+		"teacherOrStudent": "student",
+		"job": "Design Head"
+	},
+	{
+		"name": "J. Vicor Paul",
+		"teacherOrStudent": "student",
+		"job": "Publicity Head"
+	}
+]

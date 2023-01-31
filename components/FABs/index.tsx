@@ -18,9 +18,9 @@ export default function FABs() {
 	const { classes, cx, theme } = useStyles();
 	return (
 		<div className={classes.btns}>
-			<FAB>
+			{/* <FAB>
 				<FaSearch />
-			</FAB>
+			</FAB> */}
 			<FAB>
 				<Link href="#">
 					<FaChevronUp />
