@@ -44,7 +44,7 @@ export default function App(props: CustomAppProps) {
 	return (
 		<>
 			<Head>
-				<title>CBIT - IETE Student Forum (CBIT-ISF)</title>
+				<title key="title">CBIT - IETE Student Forum (CBIT-ISF)</title>
 				{!Component.metaTagApplied && <AllMetaTags />}
 			</Head>
 

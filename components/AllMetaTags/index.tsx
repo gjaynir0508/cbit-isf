@@ -205,8 +205,12 @@ export default function AllMetaTags({
 				</>
 			)}
 
-			<meta property="og:title" content="" key="og-title" />
-			<meta property="og:site_name" content="" key="og-site-name" />
+			<meta property="og:title" content={pageTitle} key="og-title" />
+			<meta
+				property="og:site_name"
+				content="CBIT-ISF"
+				key="og-site-name"
+			/>
 			<meta
 				property="og:description"
 				content={ogDescription}

@@ -12,12 +12,12 @@ import {
 import { useRouter } from "next/router";
 import { Carousel } from "@mantine/carousel";
 import Image from "next/image";
-import { useEffect } from "react";
 import Head from "next/head";
 import AllMetaTags from "@components/AllMetaTags";
 import Link from "next/link";
 import { FaCheck, FaShare } from "react-icons/fa";
 import { useState } from "react";
+import { useEffect } from "react";
 
 const useStyles = createStyles((theme, _params, getRef) => ({
 	container: {
@@ -115,7 +115,7 @@ export default function Event({ post }) {
 	return (
 		<>
 			<Head>
-				<title>{post.title} - CBIT ISF Event</title>
+				<title key="title">{post.title} - CBIT ISF Event</title>
 				<AllMetaTags
 					pageTitle={post.title}
 					pageDescription={post.description}
