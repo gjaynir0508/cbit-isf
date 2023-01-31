@@ -41,7 +41,7 @@ const useStyles = createStyles((theme, _params, getRef) => ({
 		fontWeight: 700,
 	},
 	flex1: {
-		flex: 1,
+		flexGrow: 1,
 		"& button": {
 			width: "100%",
 		},
@@ -159,11 +159,15 @@ export function CardWithCarousel({
 				</Group>
 			</Card.Section>
 
-			<Group mt="md">
+			<Group
+				mt="md"
+				style={{ display: "flex", justifyContent: "space-between" }}
+			>
 				<Link href={`/events/${id}`} className={classes.flex1}>
 					<Button radius="md">Show details</Button>
 				</Link>
 				<ActionIcon
+					title="Share"
 					variant="default"
 					radius="md"
 					size={36}

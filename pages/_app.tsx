@@ -15,7 +15,7 @@ interface CustomAppProps extends AppProps {
 	Component: AppProps["Component"] & {
 		PageLayout?: React.ComponentType<{ children: React.ReactNode }>;
 		noLayout?: boolean;
-		metaTagProps?: AllMetaTagsProps;
+		metaTagApplied?: boolean;
 	};
 }
 
@@ -35,7 +35,7 @@ export default function App(props: CustomAppProps) {
 		<>
 			<Head>
 				<title>CBIT - IETE Student Forum (CBIT-ISF)</title>
-				<AllMetaTags {...(Component.metaTagProps || {})} />
+				{!Component.metaTagApplied && <AllMetaTags />}
 			</Head>
 
 			<ColorSchemeProvider

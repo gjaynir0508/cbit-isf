@@ -48,11 +48,12 @@ const DEFAULT_PAGE_KEYWORDS = keywords;
 // const DEFAULT_PWA_MANIFEST_HREF = "/webapp.webmanifest";
 
 const DEFAULT_OG_TYPE = "website";
-const DEFAULT_OG_URL = "https://scipilogy.vercel.app/";
+const DEFAULT_OG_URL = "https://isf-cbit.vercel.app/";
 const DEFAULT_OG_DESCRIPTION =
-	"Improve your knowledge and save time with our useful resources for Academics. Download the free Formula Sheets for quick recaps or use them to learn formulae.";
-const DEFAULT_OG_IMAGE_URL = "https://scipilogy.vercel.app/hero.jpg";
-const DEFAULT_OG_IMAGE_ALT = "Sciπlogy Image";
+	"Student Forum Wing of IETE. CBIT IETE Student Chapter is a platform for students to learn, share and grow.";
+const DEFAULT_OG_IMAGE_URL =
+	"https://isf-cbit.vercel.app/assets/images/hero.jpg";
+const DEFAULT_OG_IMAGE_ALT = "CBIT ISF Image";
 const DEFAULT_OG_IMAGE_WIDTH = 300;
 const DEFAULT_OG_IMAGE_HEIGHT = 250;
 const DEFAULT_OG_IMAGE_TYPE = "image/jpeg";

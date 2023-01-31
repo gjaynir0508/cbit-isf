@@ -1,5 +1,11 @@
 import Image from "next/image";
-import { Button, createStyles, Text, useMantineTheme } from "@mantine/core";
+import {
+	Button,
+	createStyles,
+	Text,
+	Tooltip,
+	useMantineTheme,
+} from "@mantine/core";
 import {
 	FaArrowDown,
 	FaExternalLinkAlt,
@@ -42,7 +48,7 @@ const useStyles = createStyles((theme) => ({
 		overflow: "hidden",
 		"@media (max-width: 768px)": {
 			justifyContent: "space-between",
-			"& img:nth-child-of-type(2)": {
+			"& img:nth-of-type(2)": {
 				maxWidth: "150px",
 				height: "auto",
 			},
@@ -257,13 +263,23 @@ export default function Footer() {
 				<div className={classes.buttons}>
 					<div>
 						<Text pb="md">Pay the Membership Fee</Text>
-						<Button
-							variant="gradient"
-							gradient={{ from: "", to: "" }}
+						<Link
+							href="https://drive.google.com/file/d/1SSteg95Xw4Rz7nMBEkU4UcnArgg6rCkp/view"
+							target="_blank"
 						>
-							<FaMoneyBill />
-							&nbsp; Fee Payment Online
-						</Button>
+							<Tooltip
+								label="Scan the QR to pay fee Online"
+								position="bottom"
+							>
+								<Button
+									variant="gradient"
+									gradient={{ from: "", to: "" }}
+								>
+									<FaMoneyBill />
+									&nbsp; Fee Payment Online
+								</Button>
+							</Tooltip>
+						</Link>
 					</div>
 					<DashedArrow
 						stroke={
@@ -278,13 +294,26 @@ export default function Footer() {
 							Fill in the Application Form & <br /> Upload the
 							Payment Receipt
 						</Text>
-						<Button
-							variant="gradient"
-							gradient={{ from: "#23477C", to: "#1E778A" }}
+						<Link
+							href="https://forms.gle/8nfPK4KRp7Tg9gK88"
+							target="_blank"
 						>
-							<FaPen />
-							&nbsp; ISF CBIT Membership Form
-						</Button>
+							<Tooltip
+								label="Fill the Google Form"
+								position="bottom"
+							>
+								<Button
+									variant="gradient"
+									gradient={{
+										from: "#23477C",
+										to: "#1E778A",
+									}}
+								>
+									<FaPen />
+									&nbsp; ISF CBIT Membership Form
+								</Button>
+							</Tooltip>
+						</Link>
 					</div>
 				</div>
 			</div>
