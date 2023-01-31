@@ -250,11 +250,7 @@ export default function AllMetaTags({
 				content={twitterCardTitle}
 				key="twitter-title"
 			/>
-			<meta
-				property="twitter:site"
-				content="@scipilogy"
-				key="twitter-site"
-			/>
+			<meta property="twitter:site" content="@iete" key="twitter-site" />
 
 			<meta name="apple-mobile-web-app-capable" content="yes" />
 			<meta name="apple-mobile-web-app-title" content={pageTitle} />

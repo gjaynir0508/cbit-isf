@@ -8,7 +8,7 @@ export default class _Document extends Document {
 
 	render() {
 		return (
-			<Html>
+			<Html lang="en_US">
 				<Head />
 				<body>
 					<Main />

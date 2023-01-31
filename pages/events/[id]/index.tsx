@@ -43,7 +43,7 @@ const useStyles = createStyles((theme, _params, getRef) => ({
 
 export default function Event({ post }) {
 	const { classes, cx, theme } = useStyles();
-	const { asPath } = useRouter();
+	const { asPath, basePath } = useRouter();
 	const breadcrumbs = ceateBreadcrumbItems({ asPath });
 	if (!post) return <div>Loading...</div>;
 	const features = post.tags.map((tag) => (
@@ -65,7 +65,7 @@ export default function Event({ post }) {
 					ogImageUrl={post.images[0]}
 					ogDescription={post.description}
 					ogImageAlt={post.title}
-					ogUrl={window.location.href}
+					ogUrl={`https://isf-cbit.vercel.app/events/${post.id}`}
 					twitterCardTitle={post.title}
 					ogType="article"
 					articlePublishedTime={post.date}
