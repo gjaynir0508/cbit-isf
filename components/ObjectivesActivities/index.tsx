@@ -19,7 +19,7 @@ const useStyles = createStyles((theme) => ({
 		gap: "2rem",
 		"@media (max-width: 768px)": {
 			flexDirection: "column",
-			padding: "16px 2rem 16px 1rem",
+			padding: "16px 2rem 16px 0rem",
 		},
 	},
 	objectives: {

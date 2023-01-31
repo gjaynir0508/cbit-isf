@@ -20,14 +20,18 @@ const useStyles = createStyles((theme) => ({
 		gap: "64px",
 		"@media (max-width: 768px)": {
 			flexDirection: "column",
-			padding: "3rem",
+			padding: "3rem 1.5rem",
 			gap: "32px",
 		},
-		overflow: "hidden",
 	},
 	linkssection: {
 		"& a": {
 			textDecoration: "none",
+		},
+		"@media (max-width: 768px)": {
+			display: "flex",
+			flexDirection: "column",
+			justifyContent: "center",
 		},
 	},
 	images: {
@@ -35,6 +39,14 @@ const useStyles = createStyles((theme) => ({
 		display: "flex",
 		alignItems: "center",
 		maxHeight: "84px",
+		overflow: "hidden",
+		"@media (max-width: 768px)": {
+			justifyContent: "space-between",
+			"& img:nth-child-of-type(2)": {
+				maxWidth: "150px",
+				height: "auto",
+			},
+		},
 	},
 	membership: {
 		display: "flex",
@@ -87,8 +99,9 @@ const useStyles = createStyles((theme) => ({
 			marginBottom: "16px",
 		},
 		"@media (max-width: 768px)": {
+			maxWidth: "70vw",
 			justifyContent: "space-between",
-			padding: "0 3rem",
+			padding: "0 1rem",
 		},
 	},
 	links: {
@@ -128,7 +141,6 @@ const useStyles = createStyles((theme) => ({
 				content: "''",
 				display: "block",
 				position: "absolute",
-				zIndex: 100,
 				height: "16px",
 				width: "2.5px",
 				backgroundColor:

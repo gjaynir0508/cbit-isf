@@ -24,6 +24,9 @@ const useStyles = createStyles((theme) => ({
 				backgroundColor: "transparent",
 			},
 		},
+		"@media (max-width: 768px)": {
+			padding: "1rem 2rem 2rem",
+		},
 	},
 	verticalFlex: {
 		display: "flex",
@@ -55,6 +58,7 @@ const useStyles = createStyles((theme) => ({
 		maxWidth: "min(70vw, 1080px)",
 		"@media (max-width: 768px)": {
 			flexDirection: "column",
+			maxWidth: "87vw",
 		},
 	},
 }));

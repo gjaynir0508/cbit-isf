@@ -16,6 +16,14 @@ const useStyles = createStyles((theme) => ({
 		margin: "1rem 4rem",
 		"@media (max-width: 768px)": {
 			margin: "1rem 2rem",
+			flexDirection: "column",
+			"& h3": {
+				borderRadius: "4px 4px 0px 0px",
+				padding: "8px 16px 4px",
+				marginBottom: "0",
+				width: "100%",
+				textAlign: "center",
+			},
 		},
 	},
 	marquee: {
@@ -29,6 +37,10 @@ const useStyles = createStyles((theme) => ({
 		}`,
 		height: "2.25rem",
 		borderRadius: "0px 4px 4px 0px",
+		"@media (max-width: 768px)": {
+			borderRadius: "0px 0px 4px 4px",
+			fontSize: "smaller",
+		},
 		"&::-webkit-scrollbar": {
 			display: "none",
 			height: 0,

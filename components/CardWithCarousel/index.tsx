@@ -117,6 +117,7 @@ export function CardWithCarousel({
 				<Carousel
 					withIndicators
 					loop
+					withKeyboardEvents
 					classNames={{
 						root: classes.carousel,
 						controls: classes.carouselControls,
@@ -125,7 +126,12 @@ export function CardWithCarousel({
 				>
 					{images.map((image, i) => (
 						<Carousel.Slide key={i}>
-							<Image src={image} alt={title} height={180} />
+							<Image
+								src={image}
+								alt={title}
+								height={180}
+								placeholder="blur"
+							/>
 						</Carousel.Slide>
 					))}
 				</Carousel>

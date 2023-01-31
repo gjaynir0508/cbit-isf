@@ -15,6 +15,9 @@ const useStyles = createStyles((theme, _params, getRef) => ({
 		display: "grid",
 		gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
 		gridGap: "2rem",
+		"@media (max-width: 600px)": {
+			gridTemplateColumns: "1fr",
+		},
 	},
 	carousel: {
 		"&:hover": {
@@ -57,7 +60,6 @@ export default function Events({ posts }) {
 				loop
 				withControls
 				withIndicators
-				withKeyboardEvents
 				height={500}
 				classNames={{
 					root: classes.carousel,

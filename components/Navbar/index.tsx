@@ -206,7 +206,13 @@ export default function Navbar() {
 					height="100"
 					quality={100}
 				/>
-				<Link href="/">
+				<Link
+					href="/"
+					onClick={() => {
+						setNavOpen(false);
+						setLockScroll(false);
+					}}
+				>
 					<Text
 						component="span"
 						size="md"
@@ -224,7 +230,13 @@ export default function Navbar() {
 						Home
 					</Text>
 				</Link>
-				<Link href="/student-members">
+				<Link
+					href="/student-members"
+					onClick={() => {
+						setNavOpen(false);
+						setLockScroll(false);
+					}}
+				>
 					<Text
 						component="span"
 						size="md"
@@ -244,7 +256,13 @@ export default function Navbar() {
 						Student Members
 					</Text>
 				</Link>
-				<Link href="/events">
+				<Link
+					href="/events"
+					onClick={() => {
+						setNavOpen(false);
+						setLockScroll(false);
+					}}
+				>
 					<Text
 						component="span"
 						size="md"

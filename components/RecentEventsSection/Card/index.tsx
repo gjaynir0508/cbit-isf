@@ -12,6 +12,7 @@ import {
 import { FaShare, FaCheck } from "react-icons/fa";
 import { useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const useStyles = createStyles((theme) => ({
 	card: {
@@ -40,7 +41,7 @@ const useStyles = createStyles((theme) => ({
 		fontWeight: 700,
 	},
 	flex1: {
-		flex: 1,
+		flexGrow: 1,
 		"& button": {
 			width: "100%",
 		},
@@ -71,6 +72,7 @@ export function BadgeCard({
 }: BadgeCardProps) {
 	const { classes, theme, cx } = useStyles();
 	const [err, setErr] = useState(false);
+	const router = useRouter();
 
 	const features = tags.map((tag) => (
 		<Badge
@@ -120,6 +122,7 @@ export function BadgeCard({
 					<Button radius="md">Show details</Button>
 				</Link>
 				<ActionIcon
+					title="Share this event"
 					variant="default"
 					radius="md"
 					size={36}
@@ -128,7 +131,7 @@ export function BadgeCard({
 							await navigator.share({
 								title,
 								text: description,
-								url: "https://scipilogy.vercel.app",
+								url: `${window.location.origin}/events/${id}`,
 							});
 						} catch {
 							setErr(true);

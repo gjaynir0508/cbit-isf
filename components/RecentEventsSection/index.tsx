@@ -9,9 +9,15 @@ const useStyles = createStyles((theme) => ({
 	container: {
 		padding: "1rem 4rem",
 		overflow: "hidden",
+		"@media (max-width: 768px)": {
+			padding: "1rem 2rem",
+		},
 	},
 	title: {
 		fontSize: "1.7rem",
+		"@media (max-width: 768px)": {
+			fontSize: "1.5rem",
+		},
 	},
 	link: {
 		display: "flex",
@@ -36,6 +42,10 @@ const useStyles = createStyles((theme) => ({
 		},
 		"&:hover": {
 			color: theme.colors.blue[6],
+		},
+		whiteSpace: "nowrap",
+		"@media (max-width: 768px)": {
+			fontSize: "0.8rem",
 		},
 	},
 	titlelink: {
@@ -66,6 +76,7 @@ const useStyles = createStyles((theme) => ({
 		padding: "0.5rem 1rem",
 		"@media (max-width: 768px)": {
 			gap: "2rem",
+			padding: "0.5rem 0.5rem",
 		},
 	},
 	badgeCard: {
