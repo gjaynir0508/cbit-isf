@@ -9,10 +9,11 @@ import {
 	Notification,
 	createStyles,
 } from "@mantine/core";
-import { FaShare, FaCheck, FaCross } from "react-icons/fa";
+import { FaShare } from "react-icons/fa";
 import { useState } from "react";
 import Link from "next/link";
 import { Carousel } from "@mantine/carousel";
+import { AiFillCloseCircle } from "react-icons/ai";
 
 const useStyles = createStyles((theme, _params, getRef) => ({
 	card: {
@@ -181,9 +182,8 @@ export function CardWithCarousel({
 				</ActionIcon>
 				{err && (
 					<Notification
-						color={theme.colors.red[4]}
-						icon={<FaCross />}
-						title="We notify you that"
+						color="red"
+						icon={<AiFillCloseCircle />}
 						onClose={() => setErr(false)}
 					>
 						Sorry! We couldn&apos;t share this event
