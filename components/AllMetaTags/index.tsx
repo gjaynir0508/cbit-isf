@@ -52,7 +52,7 @@ const DEFAULT_OG_URL = "https://isf-cbit.vercel.app/";
 const DEFAULT_OG_DESCRIPTION =
 	"Student Forum Wing of IETE. CBIT IETE Student Chapter is a platform for students to learn, share and grow.";
 const DEFAULT_OG_IMAGE_URL =
-	"https://isf-cbit.vercel.app/assets/images/hero.jpg";
+	"https://isf-cbit.vercel.app/assets/images/hero.jpeg";
 const DEFAULT_OG_IMAGE_ALT = "CBIT ISF Image";
 const DEFAULT_OG_IMAGE_WIDTH = 300;
 const DEFAULT_OG_IMAGE_HEIGHT = 250;
