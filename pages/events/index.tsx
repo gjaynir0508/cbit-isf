@@ -124,7 +124,7 @@ export function getStaticProps() {
 		pageDescription: "The Events page of CBIT ISF",
 		ogImageUrl: `https://isf-cbit.vercel.app/assets/images/carousel/${
 			Math.round(Math.random() * 14) + 1
-		}.png`,
+		}.jpg`,
 		ogDescription: "The Events page of CBIT ISF",
 		ogImageAlt: "CBIT ISF Events",
 		ogUrl: `https://isf-cbit.vercel.app/events/`,

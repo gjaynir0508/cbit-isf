@@ -224,7 +224,7 @@ Event.metaTagsApplied = true;
 
 export function getStaticProps({ params }) {
 	const post = getPostById(params.id);
-	const metaTags = {
+	const metaTagProps = {
 		pageTitle: post.title,
 		pageDescription: post.description,
 		ogImageUrl: post.images[0],
@@ -242,7 +242,7 @@ export function getStaticProps({ params }) {
 	return {
 		props: {
 			post,
-			metaTags,
+			metaTagProps,
 		},
 	};
 }
