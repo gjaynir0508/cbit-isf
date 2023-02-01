@@ -119,7 +119,18 @@ Events.metaTagsApplied = true;
 
 export function getStaticProps() {
 	const posts = getAllPosts();
+	const metaTagProps = {
+		pageTitle: "CBIT ISF Events",
+		pageDescription: "The Events page of CBIT ISF",
+		ogImageUrl: `https://isf-cbit.vercel.app/assets/images/carousel/${
+			Math.round(Math.random() * 14) + 1
+		}.png`,
+		ogDescription: "The Events page of CBIT ISF",
+		ogImageAlt: "CBIT ISF Events",
+		ogUrl: `https://isf-cbit.vercel.app/events/`,
+		twitterCardTitle: "CBIT ISF Events",
+	};
 	return {
-		props: { posts },
+		props: { posts, metaTagProps },
 	};
 }

@@ -119,21 +119,6 @@ export default function Event({ post }) {
 		<>
 			<Head>
 				<title key="title">{`${post.title} - CBIT ISF Event`}</title>
-				<AllMetaTags
-					pageTitle={post.title}
-					pageDescription={post.description}
-					ogImageUrl={post.images[0]}
-					ogDescription={post.description}
-					ogImageAlt={post.title}
-					ogUrl={`https://isf-cbit.vercel.app/events/${post.id}`}
-					twitterCardTitle={post.title}
-					ogType="article"
-					articlePublishedTime={post.date}
-					articleModifiedTime={post.date}
-					articleAuthor="ISF"
-					articleSection="Events ISF"
-					articleTags={post.tags.map((tag) => tag.label)}
-				/>
 			</Head>
 			<div className={classes.container}>
 				<Breadcrumbs items={breadcrumbs} />
@@ -239,9 +224,25 @@ Event.metaTagsApplied = true;
 
 export function getStaticProps({ params }) {
 	const post = getPostById(params.id);
+	const metaTags = {
+		pageTitle: post.title,
+		pageDescription: post.description,
+		ogImageUrl: post.images[0],
+		ogDescription: post.description,
+		ogImageAlt: post.title,
+		ogUrl: `https://isf-cbit.vercel.app/events/${post.id}`,
+		twitterCardTitle: post.title,
+		ogType: "article",
+		articlePublishedTime: post.date,
+		articleModifiedTime: post.date,
+		articleAuthor: "ISF",
+		articleSection: "Events ISF",
+		articleTags: post.tags.map((tag) => tag.label),
+	};
 	return {
 		props: {
 			post,
+			metaTags,
 		},
 	};
 }
