@@ -16,12 +16,13 @@ interface CustomAppProps extends AppProps {
 	Component: AppProps["Component"] & {
 		PageLayout?: React.ComponentType<{ children: React.ReactNode }>;
 		noLayout?: boolean;
-		metaTagApplied?: boolean;
+	};
+	pageProps: AppProps["pageProps"] & {
+		metaTagProps?: AllMetaTagsProps;
 	};
 }
 
-export default function App(props: CustomAppProps) {
-	const { Component, pageProps } = props;
+export default function App({ Component, pageProps }: CustomAppProps) {
 	const [colorScheme, setColorScheme] = useLocalStorage<ColorScheme>({
 		key: "mantine-color-scheme",
 		defaultValue: "light",
@@ -45,7 +46,7 @@ export default function App(props: CustomAppProps) {
 		<>
 			<Head>
 				<title key="title">CBIT - IETE Student Forum (CBIT-ISF)</title>
-				{!Component.metaTagApplied && <AllMetaTags />}
+				<AllMetaTags {...(pageProps.metaTagProps ?? {})} />
 			</Head>
 
 			<ColorSchemeProvider
