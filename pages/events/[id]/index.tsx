@@ -227,7 +227,7 @@ export function getStaticProps({ params }) {
 	const metaTagProps = {
 		pageTitle: post.title,
 		pageDescription: post.description,
-		ogImageUrl: post.images[0],
+		ogImageUrl: `https://isf-cbit.vercel.app${post.images[0]}`,
 		ogDescription: post.description,
 		ogImageAlt: post.title,
 		ogUrl: `https://isf-cbit.vercel.app/events/${post.id}`,
