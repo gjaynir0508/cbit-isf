@@ -77,6 +77,11 @@ const useStyles = createStyles((theme) => ({
 			padding: "64px 32px",
 			alignItems: "center",
 			justifyContent: "center",
+			boxShadow: `0 0 10px 0 ${
+				theme.colorScheme === "dark"
+					? theme.colors.dark[5]
+					: theme.colors.gray[5]
+			}`,
 		},
 	},
 	brandLink: {
@@ -289,6 +294,32 @@ export default function Navbar() {
 						}
 					>
 						Events
+					</Text>
+				</Link>
+				<Link
+					href="/coordinators"
+					onClick={() => {
+						setNavOpen(false);
+						setLockScroll(false);
+					}}
+				>
+					<Text
+						component="span"
+						size="md"
+						color={
+							isHome && !isNavBg
+								? "#BDBDBD"
+								: theme.colorScheme === "light"
+								? "#2B2B2B"
+								: "white"
+						}
+						className={
+							router.pathname === "/coordinators"
+								? cx(classes.active)
+								: ""
+						}
+					>
+						Coordinators
 					</Text>
 				</Link>
 			</div>
