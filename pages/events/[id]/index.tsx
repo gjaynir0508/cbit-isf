@@ -118,7 +118,7 @@ export default function Event({ post }) {
 	return (
 		<>
 			<Head>
-				<title key="title">{post.title} - CBIT ISF Event</title>
+				<title key="title">{`${post.title} - CBIT ISF Event`}</title>
 				<AllMetaTags
 					pageTitle={post.title}
 					pageDescription={post.description}
