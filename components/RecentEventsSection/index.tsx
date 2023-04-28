@@ -80,7 +80,7 @@ const useStyles = createStyles((theme) => ({
 		},
 	},
 	badgeCard: {
-		minWidth: "300px",
+		minWidth: "320px",
 	},
 }));
 

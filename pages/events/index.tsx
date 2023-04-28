@@ -99,7 +99,12 @@ export default function Events({ posts }) {
 								<Image
 									src={`/assets/images/carousel/${i + 1}.jpg`}
 									alt={`Events Carousel Image ${i + 1}`}
-									fill
+									width={800}
+									height={300}
+									style={{
+										width: "100%",
+										height: "100%",
+									}}
 								/>
 							</Carousel.Slide>
 						))}

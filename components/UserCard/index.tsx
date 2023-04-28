@@ -24,7 +24,9 @@ export function UserInfoAction({
 					theme.colorScheme === "dark"
 						? theme.colors.dark[8]
 						: theme.white,
+				minWidth: 300,
 				maxWidth: 300,
+				flex: 1,
 			})}
 		>
 			<Avatar
