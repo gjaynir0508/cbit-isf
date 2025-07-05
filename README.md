@@ -1,3 +1,14 @@
+# CBIT ISF (IETE Student Forum) Website
+
+Hey there, this is a website for CBIT ISF built with Next JS and Mantine components, featuring
+- Informative and Interactive Home Page
+- Responsive Design
+- Light and Dark Themes
+- Shareable posts
+- Member and Coordinator Pages 
+
+## Next JS template instructions
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
