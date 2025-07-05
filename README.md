@@ -1,10 +1,19 @@
 # CBIT ISF (IETE Student Forum) Website
 
+[Website ↗](https://isf-cbit.vercel.app/)
+
+[![image](https://github.com/user-attachments/assets/19fc90e1-f09e-4bb9-8141-cb7261a45db2)](https://isf-cbit.vercel.app/)
+
 Hey there, this is a website for CBIT ISF built with Next JS and Mantine components, featuring
 - Informative and Interactive Home Page
+  - Hero Section with Call-To-Action
+  - Recent Updates and Events
+  - About Section
+  - Objectives of the Student Forum and Key Activities
+  - ISF Membership Details
 - Responsive Design
 - Light and Dark Themes
-- Shareable posts
+- Shareable Event posts
 - Member and Coordinator Pages 
 
 ## Next JS template instructions
